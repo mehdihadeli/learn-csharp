@@ -1,0 +1,13 @@
+node_modules/
+.docusaurus/
+build/
+.cache-loader/
+.env
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+__pycache__/
+*.py[cod]
+.venv/
+.ipynb_checkpoints/
