@@ -1,22 +1,14 @@
 # Objects and Instances
 
-One of the most important ideas in object-oriented programming is the difference between a type and an object. A type is a definition. It describes what data and behavior are available. An object is a concrete runtime value created from that definition.
+One of the most important ideas in object-oriented programming is the difference between a type and an object. A type is a definition. It describes what members exist and what kind of data and behavior are possible. An object, also called an instance, is one actual runtime value created from that definition.
 
-In C#, classes, records, and structs all define types, but the language only starts doing useful runtime work once code creates actual instances. This distinction matters because many beginner mistakes come from talking about a class as though it were already an object, or from forgetting that different objects created from the same type can hold different state.
+This distinction matters because many beginner mistakes happen when code treats a type as if it were already a living object. In C#, the type describes the shape. The instance is the real thing your program works with while it runs.
 
-## Type Versus Runtime Value
+## Type versus instance
 
-When you write a class, you are describing a shape that instances can have. The class says, "objects of this kind have these members." It does not mean the object already exists.
-
-When you call a constructor with `new`, C# creates a new instance. That instance lives at runtime, can hold its own values, and can be referenced by variables.
+When you write a class, you are describing a model.
 
 ```csharp
-var firstCustomer = new Customer("Lina");
-var secondCustomer = new Customer("Omid");
-
-Console.WriteLine(firstCustomer.Name);
-Console.WriteLine(secondCustomer.Name);
-
 class Customer
 {
     public Customer(string name)
@@ -28,24 +20,50 @@ class Customer
 }
 ```
 
-Both variables use the same type, but they refer to different objects. That is why one object can contain `"Lina"` while the other contains `"Omid"`.
+That code defines what a `Customer` object looks like. It does not create any customers yet.
 
-## Why Instances Matter
+Objects appear only when code uses `new`.
 
-Instances are where object-oriented design becomes real. If a type models a bank account, order, or user, the instance is the specific bank account, the specific order, or the specific user your program is working with right now.
+```csharp
+var firstCustomer = new Customer("Lina");
+var secondCustomer = new Customer("Omid");
 
-This is also why state belongs to instances. If one `Order` has been paid and another has not, the difference does not live in the type definition. It lives in the values stored by each object.
+Console.WriteLine(firstCustomer.Name);
+Console.WriteLine(secondCustomer.Name);
+```
 
-In practice, this means you should ask questions such as:
+Both variables use the same type, but they refer to different objects. That is why one object can store `"Lina"` while the other stores `"Omid"`.
 
-- what data belongs to each object
+## A visual mental model
+
+```mermaid
+flowchart LR
+    A["Type definition\nCustomer"] --> B["new Customer(\"Lina\")"]
+    A --> C["new Customer(\"Omid\")"]
+    B --> D["Object 1\nName = Lina"]
+    C --> E["Object 2\nName = Omid"]
+```
+
+The important idea is that many objects can come from one type definition.
+
+## Why instances matter
+
+Instances are where object-oriented design becomes practical. If a type models a bank account, order, book, or user, the instance is the specific account, the specific order, the specific book, or the specific user your program is handling right now.
+
+State belongs to the object, not to the type definition.
+
+If one `Order` has been paid and another has not, the difference is not in the `Order` class itself. The difference is in the data stored inside each instance.
+
+That is why good object design asks questions like:
+
+- what data belongs to each individual object
 - what behavior should operate on that data
 - whether the object should be mutable or mostly read-only
-- how many instances your program is expected to create
+- whether multiple objects of the same type should be able to hold different values safely
 
-## Reference Identity
+## Variables and object references
 
-For class types, variables usually hold references to objects rather than embedding the full object data directly. Two variables can point to the same object, and changes made through one reference are visible through the other.
+For class types, a variable usually holds a reference to an object rather than containing the full object data directly. That means two variables can refer to the same object.
 
 ```csharp
 var account = new Account("A-100");
@@ -70,22 +88,79 @@ class Account
 }
 ```
 
-The output shows the updated number because `account` and `alias` refer to the same runtime object.
+The output is `A-200` because `account` and `alias` refer to the same runtime object.
 
-## A Useful Mental Model
+## Identity versus equal-looking data
 
-An effective mental model is:
+Two objects can contain the same values and still be different objects.
 
-- the type defines what is possible
-- the object represents one actual thing in memory at runtime
-- the variable stores a way to access that object
+```csharp
+var first = new Customer("Lina");
+var second = new Customer("Lina");
 
-That model makes later topics such as constructors, properties, inheritance, and polymorphism much easier to understand.
+Console.WriteLine(first.Name == second.Name);
+Console.WriteLine(ReferenceEquals(first, second));
+```
 
-## Common Beginner Confusion
+The names are equal as text, but the objects are different instances.
 
-Do not treat a class name as though it were already the thing itself. `Customer` is a type. `new Customer("Lina")` is an object creation expression. The difference looks small in syntax, but it changes how you reason about state, identity, and behavior.
+That distinction becomes important when you reason about updates, sharing, caching, and comparisons.
+
+## Objects and lifetime
+
+An object exists only after construction and only as long as the program still needs it. From a beginner point of view, the useful takeaway is simple:
+
+- the type exists in source code as a definition
+- the object exists at runtime after construction
+- variables let code access that object
+
+This mental model makes later topics such as constructors, properties, methods, inheritance, and polymorphism much easier to understand.
+
+## A fuller example
+
+```csharp
+var cart1 = new ShoppingCart();
+var cart2 = new ShoppingCart();
+
+cart1.AddItem("Notebook");
+cart2.AddItem("Pen");
+cart2.AddItem("Pencil");
+
+Console.WriteLine(cart1.ItemCount);
+Console.WriteLine(cart2.ItemCount);
+
+class ShoppingCart
+{
+    private int _itemCount;
+
+    public int ItemCount => _itemCount;
+
+    public void AddItem(string itemName)
+    {
+        _itemCount++;
+    }
+}
+```
+
+Even though both objects use the same type, they keep separate state.
+
+## Common beginner mistakes
+
+- Treating a class name as if it were already an object.
+- Forgetting that different instances of the same type can hold different values.
+- Forgetting that two variables can refer to the same object.
+- Assuming equal-looking data always means the same object.
+
+## Summary
+
+- a type defines what is possible
+- an object is one actual runtime instance of that type
+- `new` creates a new instance
+- class variables usually store references to objects
+- state belongs to instances, not to the type definition itself
 
 ## Practice
 
-Create two objects from the same type, give them different values, and then explain in plain language what is shared between them and what is not.
+Create two objects from the same type and give them different values.
+
+As a second exercise, create two variables that point to the same object, modify the object through one variable, and explain why the change is visible through the other variable.

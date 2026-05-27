@@ -1,12 +1,24 @@
 # Constructors
 
-Constructors define how an object is created. They are the point where a type can demand required input, assign initial state, and reject invalid values before the object starts being used.
+Constructors define how an object begins its life. They are the point where a type can demand required information, set up initial state, and reject invalid values before the object is used anywhere else.
 
-This is important because object-oriented design is not only about having members. It is also about making sure an object begins life in a valid state.
+That makes constructors one of the most important tools for protecting object validity.
 
-## Basic Purpose
+## What a constructor does
 
-When code uses `new`, the constructor runs. Its job is to prepare the new instance.
+When code uses `new`, C# allocates the object and then runs the constructor.
+
+```mermaid
+flowchart LR
+    A["new User(\"Lina\")"] --> B["Allocate object"]
+    B --> C["Run constructor"]
+    C --> D["Assign validated state"]
+    D --> E["Object ready to use"]
+```
+
+The constructor is where the type says, in effect, "if this object exists, these minimum rules have already been satisfied."
+
+## Basic constructor example
 
 ```csharp
 class User
@@ -22,9 +34,9 @@ class User
 
 This constructor makes `Name` required. A `User` object cannot be created without one.
 
-## Constructors and Invariants
+## Constructors and invariants
 
-An invariant is a rule that should remain true for every valid instance of a type. Constructors are one of the best places to enforce those rules.
+An invariant is a rule that should always be true for any valid instance of a type. Constructors are one of the best places to enforce invariants because they run before normal object use begins.
 
 ```csharp
 class Temperature
@@ -41,23 +53,47 @@ class Temperature
 }
 ```
 
-The constructor prevents impossible values from entering the object in the first place.
+This prevents impossible values from ever entering the object.
 
-## Overloaded Constructors
+## Required data versus optional data
 
-Sometimes a type can be created in more than one valid way. In those cases, you can use constructor overloads.
+Good constructors express the difference between values the object truly needs and values that can be safely defaulted.
+
+```csharp
+class BlogPost
+{
+    public BlogPost(string title, string content)
+    {
+        Title = title;
+        Content = content;
+        CreatedAt = DateTime.UtcNow;
+    }
+
+    public string Title { get; }
+    public string Content { get; }
+    public DateTime CreatedAt { get; }
+}
+```
+
+In this example, `Title` and `Content` are required from the caller, while `CreatedAt` is safely chosen by the object itself.
+
+## Constructor overloads
+
+Sometimes a type can be created in more than one valid way. Constructor overloads let the type support those different entry points.
 
 ```csharp
 class Report
 {
     public Report(string title)
+        : this(title, DateTime.UtcNow)
     {
-        Title = title;
-        CreatedAt = DateTime.UtcNow;
     }
 
     public Report(string title, DateTime createdAt)
     {
+        if (string.IsNullOrWhiteSpace(title))
+            throw new ArgumentException("Title is required.", nameof(title));
+
         Title = title;
         CreatedAt = createdAt;
     }
@@ -67,22 +103,80 @@ class Report
 }
 ```
 
-Overloads should represent genuinely useful creation choices, not just duplicate logic with slightly different shapes.
+The first constructor delegates to the second one. That avoids duplicating logic.
 
-## Primary Design Questions
+## Constructor chaining
 
-When writing a constructor, ask:
+When several constructors share setup logic, chaining them keeps the design cleaner. The `: this(...)` syntax means one constructor calls another constructor in the same type.
 
-- what information is truly required to create a valid instance
-- what values can safely be optional or defaulted
-- whether object creation is becoming too complex for a constructor alone
+That is usually better than copying validation and assignment code into multiple places.
 
-If constructor logic becomes large or confusing, that can be a sign that a factory method, builder, or smaller model is needed.
+## Constructor parameters versus settable properties
 
-## Common Mistake
+A useful design question is whether a value is required for a valid object or merely optional configuration.
 
-Do not use constructors only to assign values mechanically. Use them to protect object validity. If invalid state can enter during construction, every later member may need defensive checks.
+- If a value is required, it usually belongs in the constructor.
+- If a value is optional or changeable later, a property may be more appropriate.
+
+This distinction helps your object communicate its rules clearly.
+
+## A fuller example
+
+```csharp
+class BankAccount
+{
+    public BankAccount(string accountNumber, string ownerName, decimal openingBalance)
+    {
+        if (string.IsNullOrWhiteSpace(accountNumber))
+            throw new ArgumentException("Account number is required.", nameof(accountNumber));
+
+        if (string.IsNullOrWhiteSpace(ownerName))
+            throw new ArgumentException("Owner name is required.", nameof(ownerName));
+
+        if (openingBalance < 0)
+            throw new ArgumentOutOfRangeException(nameof(openingBalance));
+
+        AccountNumber = accountNumber;
+        OwnerName = ownerName;
+        Balance = openingBalance;
+    }
+
+    public string AccountNumber { get; }
+    public string OwnerName { get; }
+    public decimal Balance { get; private set; }
+}
+```
+
+This constructor does more than copy values. It protects the validity of every future `BankAccount` object.
+
+## When constructors become too heavy
+
+If constructor logic becomes long, branching, or hard to understand, that can signal a design problem. Common possibilities are:
+
+- too many required values
+- too many responsibilities in one type
+- creation rules that may fit a factory method better
+- setup logic that belongs in collaborating services instead of the object itself
+
+The lesson is not "constructors should be tiny." The lesson is that constructors should be focused on valid creation.
+
+## Common beginner mistakes
+
+- Leaving required values out of the constructor and hoping callers remember to assign them later.
+- Accepting invalid data and planning to check it somewhere else.
+- Duplicating the same setup logic across multiple overloads.
+- Putting unrelated business workflows into the constructor.
+
+## Summary
+
+- constructors run during object creation
+- they assign initial state and enforce required rules
+- they are a strong place to protect invariants
+- overloads should represent real creation choices
+- constructor chaining helps avoid duplicated setup logic
 
 ## Practice
 
 Write a type with two required values and one validation rule, then place that rule in the constructor so invalid objects cannot be created.
+
+As a second exercise, create two constructor overloads where one forwards to the other, and explain why that design is clearer than duplicating the assignment logic.
