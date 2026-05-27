@@ -1,196 +1,146 @@
 # Learn C\#
 
-Learn C# from the ground up with a practical, readable path inspired by course-style learning repositories, but written specifically for modern C# and .NET.
+Learn C# in a structured, docs-first way.
 
-This repository should help:
+This repository is built for learners who want more than scattered syntax notes or disconnected code snippets. It follows the official Microsoft C# and .NET documentation as the source of truth, but explains the ideas in a slower, more connected order with examples, practical notes, and companion notebooks.
 
-- beginners who want a structured roadmap
-- developers coming from other languages
-- engineers who want a quick C# reference with clear examples
+## What This Repository Includes
 
-The goal is not to collect random notes. The goal is to build a clean learning path that is accurate, readable, and easy to expand with runnable examples later.
-
-This repository aims to stay close to the spirit of the official Microsoft documentation:
-
-- the C# language reference for syntax and idioms
-- the .NET docs for platform and tooling context
-- language version guidance for newer features and compatibility
-
-## What This Repository Should Teach
-
-- C# fundamentals in a logical order
-- correct mental models for the type system and statements
-- modern .NET CLI and project workflows
-- core .NET runtime, library, packaging, diagnostics, and deployment concepts
-- practical examples you can run and modify
-- modern C# practices, not outdated habits
-
-## How To Use This Repository
-
-The full learning content lives under the [docs](docs) folder and is also used by the VitePress site.
-
-Interactive notebook companions live under the [notebooks](notebooks) folder for runnable .NET and C# examples that mirror the chapter layout.
-
-Start here:
-
-- [Introduction](docs/00-introduction.md)
+- guided lessons under [docs](docs)
+- interactive notebook companions under [notebooks](notebooks)
+- a practical learning path from C# foundations through syntax, control flow, methods, object-oriented programming, advanced language features, LINQ, asynchronous programming, Roslyn, and .NET runtime topics
+- concept-first explanations that help beginners, developers coming from other languages, and working engineers build a stronger mental model before jumping into framework-specific code
 
 ## Table of Contents
 
-### Chapter 1: Getting Started
-
-- [What Is C#?](docs/01-getting-started/01-what-is-csharp.md)
-- [Why Learn C#?](docs/01-getting-started/02-why-learn-csharp.md)
-- [C# and .NET](docs/01-getting-started/03-csharp-and-dotnet.md)
-- [Language Versions](docs/01-getting-started/04-language-versions.md)
-- [Installation and Setup](docs/01-getting-started/05-installation-and-setup.md)
-- [SDK and CLI Basics](docs/01-getting-started/06-sdk-and-cli-basics.md)
-- [IDEs: VS Code and Visual Studio](docs/01-getting-started/07-ides-vs-code-and-visual-studio.md)
-- [Your First Program](docs/01-getting-started/08-your-first-program.md)
-- [How C# Runs Code](docs/01-getting-started/09-how-csharp-runs-code.md)
-- [How To Run C# Programs](docs/01-getting-started/10-how-to-run-csharp-programs.md)
-
-### Chapter 2: Core Syntax and Types
-
-- [Variables and Naming](docs/02-core-syntax-and-types/01-variables-and-naming.md)
-- [Built-in Value Types](docs/02-core-syntax-and-types/02-built-in-value-types.md)
-- [Reference Types and Nullability](docs/02-core-syntax-and-types/03-reference-types-and-nullability.md)
-- [Type Conversion and Casting](docs/02-core-syntax-and-types/04-type-conversion-and-casting.md)
-- [Operators and Expressions](docs/02-core-syntax-and-types/05-operators-and-expressions.md)
-- [Strings and Characters](docs/02-core-syntax-and-types/06-strings-and-characters.md)
-- [Arrays](docs/02-core-syntax-and-types/07-arrays.md)
-- [Tuples](docs/02-core-syntax-and-types/08-tuples.md)
-- [Enums](docs/02-core-syntax-and-types/09-enums.md)
-- [Input and Output](docs/02-core-syntax-and-types/10-input-and-output.md)
-
-### Chapter 3: Statements and Flow Control
-
-- [Statements and Blocks](docs/03-statements-and-flow-control/01-statements-and-blocks.md)
-- [Selection Statements](docs/03-statements-and-flow-control/02-selection-statements.md)
-- [Pattern Matching](docs/03-statements-and-flow-control/03-pattern-matching.md)
-- [Iteration Statements](docs/03-statements-and-flow-control/04-iteration-statements.md)
-- [Jump Statements](docs/03-statements-and-flow-control/05-jump-statements.md)
-- [Exception-handling Statements](docs/03-statements-and-flow-control/06-exception-handling-statements.md)
-- [checked and unchecked](docs/03-statements-and-flow-control/07-checked-and-unchecked.md)
-- [using and Dispose Patterns](docs/03-statements-and-flow-control/08-using-and-dispose-patterns.md)
-- [lock Statement](docs/03-statements-and-flow-control/09-lock-statement.md)
-- [yield Statement](docs/03-statements-and-flow-control/10-yield-statement.md)
-
-### Chapter 4: Members, Methods, and Functions
-
-- [Methods](docs/04-members-methods-and-functions/01-methods.md)
-- [Method Parameters](docs/04-members-methods-and-functions/02-method-parameters.md)
-- [Optional and Named Arguments](docs/04-members-methods-and-functions/03-optional-and-named-arguments.md)
-- [Return Values](docs/04-members-methods-and-functions/04-return-values.md)
-- [Expression-bodied Members](docs/04-members-methods-and-functions/05-expression-bodied-members.md)
-- [Local Functions](docs/04-members-methods-and-functions/06-local-functions.md)
-- [Lambda Expressions](docs/04-members-methods-and-functions/07-lambda-expressions.md)
-- [Delegates](docs/04-members-methods-and-functions/08-delegates.md)
-- [Events](docs/04-members-methods-and-functions/09-events.md)
-- [Extension Methods](docs/04-members-methods-and-functions/10-extension-methods.md)
-
-### Chapter 5: Namespaces, Projects, and Organization
-
-- [Namespaces](docs/05-namespaces-projects-and-organization/01-namespaces.md)
-- [using Directives](docs/05-namespaces-projects-and-organization/02-using-directives.md)
-- [Access Modifiers](docs/05-namespaces-projects-and-organization/03-access-modifiers.md)
-- [Classes](docs/05-namespaces-projects-and-organization/04-classes.md)
-- [Structs](docs/05-namespaces-projects-and-organization/05-structs.md)
-- [Records](docs/05-namespaces-projects-and-organization/06-records.md)
-- [Interfaces](docs/05-namespaces-projects-and-organization/07-interfaces.md)
-- [Generics](docs/05-namespaces-projects-and-organization/08-generics.md)
-- [Projects and Assemblies](docs/05-namespaces-projects-and-organization/09-projects-and-assemblies.md)
-- [NuGet Packages and References](docs/05-namespaces-projects-and-organization/10-nuget-packages-and-references.md)
-
-### Chapter 6: Object-Oriented C\#
-
-- [Objects and Instances](docs/06-object-oriented-csharp/01-objects-and-instances.md)
-- [Fields and Properties](docs/06-object-oriented-csharp/02-fields-and-properties.md)
-- [Constructors](docs/06-object-oriented-csharp/03-constructors.md)
-- [Inheritance](docs/06-object-oriented-csharp/04-inheritance.md)
-- [Polymorphism](docs/06-object-oriented-csharp/05-polymorphism.md)
-- [Abstract Classes](docs/06-object-oriented-csharp/06-abstract-classes.md)
-- [Interfaces in Practice](docs/06-object-oriented-csharp/07-interfaces-in-practice.md)
-- [Operator Overloading](docs/06-object-oriented-csharp/08-operator-overloading.md)
-- [Indexers](docs/06-object-oriented-csharp/09-indexers.md)
-- [Object and Collection Initializers](docs/06-object-oriented-csharp/10-object-and-collection-initializers.md)
-
-### Chapter 7: Advanced Language Features
-
-- [Pattern Combinators](docs/07-advanced-language-features/01-pattern-combinators.md)
-- [Nullable Reference Types](docs/07-advanced-language-features/02-nullable-reference-types.md)
-- [Attributes](docs/07-advanced-language-features/03-attributes.md)
-- [Preprocessor Directives](docs/07-advanced-language-features/04-preprocessor-directives.md)
-- [Unsafe Code and Pointers](docs/07-advanced-language-features/05-unsafe-code-and-pointers.md)
-- [Span and Memory Overview](docs/07-advanced-language-features/06-span-and-memory-overview.md)
-- [User-defined Conversions](docs/07-advanced-language-features/07-user-defined-conversions.md)
-- [Overload Resolution Overview](docs/07-advanced-language-features/08-overload-resolution-overview.md)
-- [Anonymous Types](docs/07-advanced-language-features/09-anonymous-types.md)
-- [dynamic and Reflection Overview](docs/07-advanced-language-features/10-dynamic-and-reflection-overview.md)
-
-### Chapter 8: Practical C\#
-
-- [LINQ Basics](docs/08-practical-csharp/01-linq-basics.md)
-- [async and await](docs/08-practical-csharp/02-async-and-await.md)
-- [Exception Design](docs/08-practical-csharp/03-exception-design.md)
-- [File and Directory Basics](docs/08-practical-csharp/04-file-and-directory-basics.md)
-- [Serialization with System.Text.Json](docs/08-practical-csharp/05-serialization-with-system-text-json.md)
-- [Testing Basics](docs/08-practical-csharp/06-testing-basics.md)
-- [Documentation Comments](docs/08-practical-csharp/07-documentation-comments.md)
-- [Configure Language Version](docs/08-practical-csharp/08-configure-language-version.md)
-- [Whats New in Recent C# Versions](docs/08-practical-csharp/09-whats-new-in-recent-csharp-versions.md)
-- [Next Steps and References](docs/08-practical-csharp/10-next-steps-and-references.md)
-
-### Chapter 9: LINQ and Data Queries
-
-- [LINQ Overview](docs/09-linq-and-data-queries/01-linq-overview.md)
-- [Query Expressions and Method Syntax](docs/09-linq-and-data-queries/02-query-expressions-and-method-syntax.md)
-- [LINQ to Objects and Deferred Execution](docs/09-linq-and-data-queries/03-linq-to-objects-and-deferred-execution.md)
-- [IQueryable, Expression Trees, and Providers](docs/09-linq-and-data-queries/04-iqueryable-expression-trees-and-providers.md)
-
-### Chapter 10: Asynchronous Programming
-
-- [async and await Fundamentals](docs/10-asynchronous-programming/01-async-and-await-fundamentals.md)
-- [Starting and Coordinating Tasks](docs/10-asynchronous-programming/02-starting-and-coordinating-tasks.md)
-- [Composing Async Workflows](docs/10-asynchronous-programming/03-composing-async-workflows.md)
-- [Async Exceptions and Task Composition](docs/10-asynchronous-programming/04-async-exceptions-and-task-composition.md)
-
-### Chapter 11: C# How-To Guides
-
-- [Strings and Text Processing](docs/11-csharp-how-to-guides/01-strings-and-text-processing.md)
-- [Type Conversion and Parsing](docs/11-csharp-how-to-guides/02-type-conversion-and-parsing.md)
-- [Equality and Ordering](docs/11-csharp-how-to-guides/03-equality-and-ordering.md)
-- [Collections and Initializers](docs/11-csharp-how-to-guides/04-collections-and-initializers.md)
-- [Delegates, Events, and Command-Line Input](docs/11-csharp-how-to-guides/05-delegates-events-and-command-line-input.md)
-
-### Chapter 12: Roslyn and Code Analysis
-
-- [Roslyn SDK Overview](docs/12-roslyn-and-code-analysis/01-roslyn-sdk-overview.md)
-- [Syntax and Semantic Analysis](docs/12-roslyn-and-code-analysis/02-syntax-and-semantic-analysis.md)
-- [Analyzers and Code Fixes](docs/12-roslyn-and-code-analysis/03-analyzers-and-code-fixes.md)
-- [Source Generators and Workspaces](docs/12-roslyn-and-code-analysis/04-source-generators-and-workspaces.md)
-
-### Chapter 13: What's New in C\#
-
-- [Language Versioning and Compatibility](docs/13-whats-new-in-csharp/01-language-versioning-and-compatibility.md)
-- [What's New in C# 12](docs/13-whats-new-in-csharp/02-whats-new-in-csharp-12.md)
-- [What's New in C# 13](docs/13-whats-new-in-csharp/03-whats-new-in-csharp-13.md)
-- [What's New in C# 14 and C# 15](docs/13-whats-new-in-csharp/04-whats-new-in-csharp-14-and-15.md)
-
-### Chapter 14: .NET Platform and Runtime
-
-- [.NET Platform Overview](docs/14-dotnet-platform-and-runtime/01-dotnet-platform-overview.md)
-- [Runtime, CLR, and Managed Execution](docs/14-dotnet-platform-and-runtime/02-runtime-clr-and-managed-execution.md)
-- [Common Type System and Base Class Library](docs/14-dotnet-platform-and-runtime/03-common-type-system-and-base-class-library.md)
-- [Target Frameworks, TFMs, and .NET Standard](docs/14-dotnet-platform-and-runtime/04-target-frameworks-tfms-and-dotnet-standard.md)
-- [.NET SDK, Project System, and MSBuild](docs/14-dotnet-platform-and-runtime/05-dotnet-sdk-project-system-and-msbuild.md)
-- [NuGet Packages and Dependency Management](docs/14-dotnet-platform-and-runtime/06-nuget-packages-and-dependency-management.md)
-- [Configuration, Dependency Injection, and Generic Host](docs/14-dotnet-platform-and-runtime/07-configuration-dependency-injection-and-generic-host.md)
-- [Logging, Diagnostics, and Observability](docs/14-dotnet-platform-and-runtime/08-logging-diagnostics-and-observability.md)
-- [Memory Management, Garbage Collection, and Resources](docs/14-dotnet-platform-and-runtime/09-memory-management-garbage-collection-and-resources.md)
-- [Threading, Tasks, and Parallel Programming](docs/14-dotnet-platform-and-runtime/10-threading-tasks-and-parallel-programming.md)
-- [Publishing, Deployment, and Versioning](docs/14-dotnet-platform-and-runtime/11-publishing-deployment-and-versioning.md)
-- [Security, Cryptography, and Safe Code](docs/14-dotnet-platform-and-runtime/12-security-cryptography-and-safe-code.md)
+- [00 Introduction](docs/00-introduction.md)
+- [01 Getting Started](docs/01-getting-started/01-what-is-csharp.md)
+  - [01 What Is C#?](docs/01-getting-started/01-what-is-csharp.md)
+  - [02 Why Learn C#?](docs/01-getting-started/02-why-learn-csharp.md)
+  - [03 C# and .NET](docs/01-getting-started/03-csharp-and-dotnet.md)
+  - [04 Language Versions](docs/01-getting-started/04-language-versions.md)
+  - [05 Installation and Setup](docs/01-getting-started/05-installation-and-setup.md)
+  - [06 SDK and CLI Basics](docs/01-getting-started/06-sdk-and-cli-basics.md)
+  - [07 IDEs: VS Code and Visual Studio](docs/01-getting-started/07-ides-vs-code-and-visual-studio.md)
+  - [08 Your First Program](docs/01-getting-started/08-your-first-program.md)
+  - [09 How C# Runs Code](docs/01-getting-started/09-how-csharp-runs-code.md)
+  - [10 How To Run C# Programs](docs/01-getting-started/10-how-to-run-csharp-programs.md)
+- [02 Core Syntax and Types](docs/02-core-syntax-and-types/01-variables-and-naming.md)
+  - [01 Variables and Naming](docs/02-core-syntax-and-types/01-variables-and-naming.md)
+  - [02 Built-in Value Types](docs/02-core-syntax-and-types/02-built-in-value-types.md)
+  - [03 Reference Types and Nullability](docs/02-core-syntax-and-types/03-reference-types-and-nullability.md)
+  - [04 Type Conversion and Casting](docs/02-core-syntax-and-types/04-type-conversion-and-casting.md)
+  - [05 Operators and Expressions](docs/02-core-syntax-and-types/05-operators-and-expressions.md)
+  - [06 Strings and Characters](docs/02-core-syntax-and-types/06-strings-and-characters.md)
+  - [07 Arrays](docs/02-core-syntax-and-types/07-arrays.md)
+  - [08 Tuples](docs/02-core-syntax-and-types/08-tuples.md)
+  - [09 Enums](docs/02-core-syntax-and-types/09-enums.md)
+  - [10 Input and Output](docs/02-core-syntax-and-types/10-input-and-output.md)
+- [03 Statements and Flow Control](docs/03-statements-and-flow-control/01-statements-and-blocks.md)
+  - [01 Statements and Blocks](docs/03-statements-and-flow-control/01-statements-and-blocks.md)
+  - [02 Selection Statements](docs/03-statements-and-flow-control/02-selection-statements.md)
+  - [03 Pattern Matching](docs/03-statements-and-flow-control/03-pattern-matching.md)
+  - [04 Iteration Statements](docs/03-statements-and-flow-control/04-iteration-statements.md)
+  - [05 Jump Statements](docs/03-statements-and-flow-control/05-jump-statements.md)
+  - [06 Exception-handling Statements](docs/03-statements-and-flow-control/06-exception-handling-statements.md)
+  - [07 checked and unchecked](docs/03-statements-and-flow-control/07-checked-and-unchecked.md)
+  - [08 using and Dispose Patterns](docs/03-statements-and-flow-control/08-using-and-dispose-patterns.md)
+  - [09 lock Statement](docs/03-statements-and-flow-control/09-lock-statement.md)
+  - [10 yield Statement](docs/03-statements-and-flow-control/10-yield-statement.md)
+- [04 Members, Methods, and Functions](docs/04-members-methods-and-functions/01-methods.md)
+  - [01 Methods](docs/04-members-methods-and-functions/01-methods.md)
+  - [02 Method Parameters](docs/04-members-methods-and-functions/02-method-parameters.md)
+  - [03 Optional and Named Arguments](docs/04-members-methods-and-functions/03-optional-and-named-arguments.md)
+  - [04 Return Values](docs/04-members-methods-and-functions/04-return-values.md)
+  - [05 Expression-bodied Members](docs/04-members-methods-and-functions/05-expression-bodied-members.md)
+  - [06 Local Functions](docs/04-members-methods-and-functions/06-local-functions.md)
+  - [07 Lambda Expressions](docs/04-members-methods-and-functions/07-lambda-expressions.md)
+  - [08 Delegates](docs/04-members-methods-and-functions/08-delegates.md)
+  - [09 Events](docs/04-members-methods-and-functions/09-events.md)
+  - [10 Extension Methods](docs/04-members-methods-and-functions/10-extension-methods.md)
+- [05 Namespaces, Projects, and Organization](docs/05-namespaces-projects-and-organization/01-namespaces.md)
+  - [01 Namespaces](docs/05-namespaces-projects-and-organization/01-namespaces.md)
+  - [02 using Directives](docs/05-namespaces-projects-and-organization/02-using-directives.md)
+  - [03 Access Modifiers](docs/05-namespaces-projects-and-organization/03-access-modifiers.md)
+  - [04 Classes](docs/05-namespaces-projects-and-organization/04-classes.md)
+  - [05 Structs](docs/05-namespaces-projects-and-organization/05-structs.md)
+  - [06 Records](docs/05-namespaces-projects-and-organization/06-records.md)
+  - [07 Interfaces](docs/05-namespaces-projects-and-organization/07-interfaces.md)
+  - [08 Generics](docs/05-namespaces-projects-and-organization/08-generics.md)
+  - [09 Projects and Assemblies](docs/05-namespaces-projects-and-organization/09-projects-and-assemblies.md)
+  - [10 NuGet Packages and References](docs/05-namespaces-projects-and-organization/10-nuget-packages-and-references.md)
+- [06 Object-Oriented C#](docs/06-object-oriented-csharp/01-objects-and-instances.md)
+  - [01 Objects and Instances](docs/06-object-oriented-csharp/01-objects-and-instances.md)
+  - [02 Fields and Properties](docs/06-object-oriented-csharp/02-fields-and-properties.md)
+  - [03 Constructors](docs/06-object-oriented-csharp/03-constructors.md)
+  - [04 Inheritance](docs/06-object-oriented-csharp/04-inheritance.md)
+  - [05 Polymorphism](docs/06-object-oriented-csharp/05-polymorphism.md)
+  - [06 Abstract Classes](docs/06-object-oriented-csharp/06-abstract-classes.md)
+  - [07 Interfaces in Practice](docs/06-object-oriented-csharp/07-interfaces-in-practice.md)
+  - [08 Operator Overloading](docs/06-object-oriented-csharp/08-operator-overloading.md)
+  - [09 Indexers](docs/06-object-oriented-csharp/09-indexers.md)
+  - [10 Object and Collection Initializers](docs/06-object-oriented-csharp/10-object-and-collection-initializers.md)
+- [07 Advanced Language Features](docs/07-advanced-language-features/01-pattern-combinators.md)
+  - [01 Pattern Combinators](docs/07-advanced-language-features/01-pattern-combinators.md)
+  - [02 Nullable Reference Types](docs/07-advanced-language-features/02-nullable-reference-types.md)
+  - [03 Attributes](docs/07-advanced-language-features/03-attributes.md)
+  - [04 Preprocessor Directives](docs/07-advanced-language-features/04-preprocessor-directives.md)
+  - [05 Unsafe Code and Pointers](docs/07-advanced-language-features/05-unsafe-code-and-pointers.md)
+  - [06 Span and Memory Overview](docs/07-advanced-language-features/06-span-and-memory-overview.md)
+  - [07 User-defined Conversions](docs/07-advanced-language-features/07-user-defined-conversions.md)
+  - [08 Overload Resolution Overview](docs/07-advanced-language-features/08-overload-resolution-overview.md)
+  - [09 Anonymous Types](docs/07-advanced-language-features/09-anonymous-types.md)
+  - [10 dynamic and Reflection Overview](docs/07-advanced-language-features/10-dynamic-and-reflection-overview.md)
+- [08 Practical C#](docs/08-practical-csharp/01-linq-basics.md)
+  - [01 LINQ Basics](docs/08-practical-csharp/01-linq-basics.md)
+  - [02 async and await](docs/08-practical-csharp/02-async-and-await.md)
+  - [03 Exception Design](docs/08-practical-csharp/03-exception-design.md)
+  - [04 File and Directory Basics](docs/08-practical-csharp/04-file-and-directory-basics.md)
+  - [05 Serialization with System.Text.Json](docs/08-practical-csharp/05-serialization-with-system-text-json.md)
+  - [06 Testing Basics](docs/08-practical-csharp/06-testing-basics.md)
+  - [07 Documentation Comments](docs/08-practical-csharp/07-documentation-comments.md)
+  - [08 Configure Language Version](docs/08-practical-csharp/08-configure-language-version.md)
+  - [09 Whats New in Recent C# Versions](docs/08-practical-csharp/09-whats-new-in-recent-csharp-versions.md)
+  - [10 Next Steps and References](docs/08-practical-csharp/10-next-steps-and-references.md)
+- [09 LINQ and Data Queries](docs/09-linq-and-data-queries/01-linq-overview.md)
+  - [01 LINQ Overview](docs/09-linq-and-data-queries/01-linq-overview.md)
+  - [02 Query Expressions and Method Syntax](docs/09-linq-and-data-queries/02-query-expressions-and-method-syntax.md)
+  - [03 LINQ to Objects and Deferred Execution](docs/09-linq-and-data-queries/03-linq-to-objects-and-deferred-execution.md)
+  - [04 IQueryable, Expression Trees, and Providers](docs/09-linq-and-data-queries/04-iqueryable-expression-trees-and-providers.md)
+- [10 Asynchronous Programming](docs/10-asynchronous-programming/01-async-and-await-fundamentals.md)
+  - [01 async and await Fundamentals](docs/10-asynchronous-programming/01-async-and-await-fundamentals.md)
+  - [02 Starting and Coordinating Tasks](docs/10-asynchronous-programming/02-starting-and-coordinating-tasks.md)
+  - [03 Composing Async Workflows](docs/10-asynchronous-programming/03-composing-async-workflows.md)
+  - [04 Async Exceptions and Task Composition](docs/10-asynchronous-programming/04-async-exceptions-and-task-composition.md)
+- [11 C# How-To Guides](docs/11-csharp-how-to-guides/01-strings-and-text-processing.md)
+  - [01 Strings and Text Processing](docs/11-csharp-how-to-guides/01-strings-and-text-processing.md)
+  - [02 Type Conversion and Parsing](docs/11-csharp-how-to-guides/02-type-conversion-and-parsing.md)
+  - [03 Equality and Ordering](docs/11-csharp-how-to-guides/03-equality-and-ordering.md)
+  - [04 Collections and Initializers](docs/11-csharp-how-to-guides/04-collections-and-initializers.md)
+  - [05 Delegates, Events, and Command-Line Input](docs/11-csharp-how-to-guides/05-delegates-events-and-command-line-input.md)
+- [12 Roslyn and Code Analysis](docs/12-roslyn-and-code-analysis/01-roslyn-sdk-overview.md)
+  - [01 Roslyn SDK Overview](docs/12-roslyn-and-code-analysis/01-roslyn-sdk-overview.md)
+  - [02 Syntax and Semantic Analysis](docs/12-roslyn-and-code-analysis/02-syntax-and-semantic-analysis.md)
+  - [03 Analyzers and Code Fixes](docs/12-roslyn-and-code-analysis/03-analyzers-and-code-fixes.md)
+  - [04 Source Generators and Workspaces](docs/12-roslyn-and-code-analysis/04-source-generators-and-workspaces.md)
+- [13 What's New in C#](docs/13-whats-new-in-csharp/01-language-versioning-and-compatibility.md)
+  - [01 Language Versioning and Compatibility](docs/13-whats-new-in-csharp/01-language-versioning-and-compatibility.md)
+  - [02 What's New in C# 12](docs/13-whats-new-in-csharp/02-whats-new-in-csharp-12.md)
+  - [03 What's New in C# 13](docs/13-whats-new-in-csharp/03-whats-new-in-csharp-13.md)
+  - [04 What's New in C# 14 and C# 15](docs/13-whats-new-in-csharp/04-whats-new-in-csharp-14-and-15.md)
+- [14 .NET Platform and Runtime](docs/14-dotnet-platform-and-runtime/01-dotnet-platform-overview.md)
+  - [01 .NET Platform Overview](docs/14-dotnet-platform-and-runtime/01-dotnet-platform-overview.md)
+  - [02 Runtime, CLR, and Managed Execution](docs/14-dotnet-platform-and-runtime/02-runtime-clr-and-managed-execution.md)
+  - [03 Common Type System and Base Class Library](docs/14-dotnet-platform-and-runtime/03-common-type-system-and-base-class-library.md)
+  - [04 Target Frameworks, TFMs, and .NET Standard](docs/14-dotnet-platform-and-runtime/04-target-frameworks-tfms-and-dotnet-standard.md)
+  - [05 .NET SDK, Project System, and MSBuild](docs/14-dotnet-platform-and-runtime/05-dotnet-sdk-project-system-and-msbuild.md)
+  - [06 NuGet Packages and Dependency Management](docs/14-dotnet-platform-and-runtime/06-nuget-packages-and-dependency-management.md)
+  - [07 Configuration, Dependency Injection, and Generic Host](docs/14-dotnet-platform-and-runtime/07-configuration-dependency-injection-and-generic-host.md)
+  - [08 Logging, Diagnostics, and Observability](docs/14-dotnet-platform-and-runtime/08-logging-diagnostics-and-observability.md)
+  - [09 Memory Management, Garbage Collection, and Resources](docs/14-dotnet-platform-and-runtime/09-memory-management-garbage-collection-and-resources.md)
+  - [10 Threading, Tasks, and Parallel Programming](docs/14-dotnet-platform-and-runtime/10-threading-tasks-and-parallel-programming.md)
+  - [11 Publishing, Deployment, and Versioning](docs/14-dotnet-platform-and-runtime/11-publishing-deployment-and-versioning.md)
+  - [12 Security, Cryptography, and Safe Code](docs/14-dotnet-platform-and-runtime/12-security-cryptography-and-safe-code.md)
 
 ## References
 
@@ -203,6 +153,15 @@ Start here:
 - [C# Language Versioning](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/configure-language-version)
 - [System.Text.Json](https://learn.microsoft.com/en-us/dotnet/standard/serialization/system-text-json/overview)
 - [NuGet Documentation](https://learn.microsoft.com/en-us/nuget/)
+
+## Notebooks
+
+The [notebooks](notebooks) folder contains hands-on companions to the main lessons.
+
+- [Notebook Companions README](notebooks/README.md)
+- [Notebook Introduction](notebooks/00-introduction.ipynb)
+
+Use `docs/` for the full explanations and `notebooks/` for runnable examples and small experiments.
 
 ## License
 
