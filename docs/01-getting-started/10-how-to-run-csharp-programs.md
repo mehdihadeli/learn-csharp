@@ -1,27 +1,52 @@
-## How To Run C# Programs
+# How To Run C# Programs
 
-C# code can be executed through different workflows, and knowing the differences helps you choose the right level of structure for learning, experimentation, or production work.
+There is more than one way to run C# code, and the differences matter. The right workflow depends on whether you are learning, experimenting, building a reusable project, or creating a small utility.
 
-### Why this topic matters
+## Project-based programs
 
-This section helps you build the mental map around C# before the language details become dense. A clear understanding here makes later chapters feel connected instead of fragmented.
-
-- Projects are the default long-term workflow.
-- Interactive styles are useful for experimentation.
-- Choose the least complicated execution path that teaches the current concept.
-
-### Try this
+The default long-term workflow is a project-based application created with the .NET SDK.
 
 ```bash
-dotnet run
+dotnet new console -n HelloProject
+dotnet run --project HelloProject
 ```
 
-Read the example as part of a workflow, not just as isolated code. The surrounding command or tool behavior is part of what you are learning.
+This is the standard choice for serious learning and maintainable applications because it gives you a project file, dependency management, build settings, and room to grow.
 
-### What to do next
+## File-based apps
 
-Keep setup and terminology straight. Many early frustrations come from mixing tool concepts together.
+Modern .NET also supports file-based C# programs. Microsoft's current guidance shows that a single `.cs` file can be run directly through the `dotnet` host.
 
-### Practice
+```csharp
+Console.WriteLine("Hello from a file-based app");
+```
 
-Create a tiny console app and run the command sequence yourself so the environment becomes familiar.
+```bash
+dotnet hello-world.cs
+```
+
+This workflow is excellent for quick experiments, tiny utilities, and lower-overhead learning steps. It is not a replacement for normal multi-file projects, but it is a useful tool.
+
+## Running from an editor
+
+Editors such as VS Code and Visual Studio can also run or debug programs through their own commands and menus. Underneath, they still rely on the SDK, project system, and runtime.
+
+That means editor-based running is convenient, but it is still valuable to know the equivalent terminal command.
+
+## Which workflow should you choose?
+
+Use a project when:
+
+- the code will grow beyond a tiny example
+- you want dependencies, tests, or multiple files
+- you want a workflow that matches normal .NET development
+
+Use a file-based app when:
+
+- you want the smallest possible setup
+- you are testing a concept quickly
+- the program naturally fits in one file
+
+## Practice
+
+Run one small example as a project and one as a file-based app. Then explain which workflow feels better for learning and which feels better for maintainable code.

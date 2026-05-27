@@ -1,28 +1,58 @@
-## C# and .NET
+# C# and .NET
 
-C# and .NET work together, but they are not the same thing. The distinction matters because language syntax, compiler behavior, runtime behavior, and library APIs are different layers of the stack.
+C# and .NET are tightly connected, but they are not the same thing. This distinction is one of the most important mental models in the entire repository.
 
-### Why this topic matters
+C# is the language you write. .NET is the platform that provides the runtime, libraries, SDK tools, packaging model, and execution environment around that language.
 
-This section helps you build the mental map around C# before the language details become dense. A clear understanding here makes later chapters feel connected instead of fragmented.
+## The simplest accurate model
 
-- The compiler belongs to the language toolchain.
-- .NET provides runtime execution, libraries, and SDK tooling.
-- Many beginner confusions disappear once these layers are separated.
+Think in layers:
 
-### Try this
+- C# gives you syntax and language rules
+- the compiler translates that source code
+- .NET provides the runtime that executes it
+- .NET libraries provide types such as `Console`, `List<T>`, `HttpClient`, and `Task`
+- the SDK provides tools such as `dotnet new`, `dotnet build`, and `dotnet run`
+
+That is why a line like `Console.WriteLine(...)` is not just "C# magic." The C# compiler understands the syntax, but `Console` comes from .NET libraries.
+
+## What Microsoft's .NET introduction emphasizes
+
+The official .NET introduction describes the platform in terms of components such as:
+
+- the runtime
+- libraries
+- compilers
+- the SDK and tools
+
+That breakdown is useful because it explains why language behavior, runtime behavior, and tool behavior are related but still different.
+
+## Example workflow
 
 ```bash
 dotnet --info
 dotnet new console -n DemoApp
+dotnet run --project DemoApp
 ```
 
-Read the example as part of a workflow, not just as isolated code. The surrounding command or tool behavior is part of what you are learning.
+This command sequence shows the platform side clearly:
 
-### What to do next
+- `dotnet --info` shows the installed SDK and runtimes
+- `dotnet new` creates project files and starter source
+- `dotnet run` builds and executes the app through the .NET toolchain
 
-Keep setup and terminology straight. Many early frustrations come from mixing tool concepts together.
+## Why this distinction matters
 
-### Practice
+When a beginner says "C# is broken," the real problem might be any of these:
 
-Create a tiny console app and run the command sequence yourself so the environment becomes familiar.
+- the SDK is not installed correctly
+- the project targets a different framework than expected
+- the runtime is missing
+- the code uses syntax from a newer language version
+- the editor tooling is misconfigured
+
+Those are different layers. If you keep the layers separate, troubleshooting gets easier.
+
+## Practice
+
+Take one feature such as `Console.WriteLine`, `List<T>`, or `async`. Explain which part belongs mostly to the language and which part belongs mostly to .NET.

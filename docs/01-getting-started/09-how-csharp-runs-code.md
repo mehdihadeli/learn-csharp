@@ -1,27 +1,52 @@
-## How C# Runs Code
+# How C# Runs Code
 
-C# code does not run as raw source. It moves through compilation and runtime stages, and that pipeline explains why the language can be portable while still running efficiently on the target machine.
+C# source code does not run directly as raw text. It goes through compilation and runtime stages. Understanding that pipeline helps explain why C# can be both portable and efficient.
 
-### Why this topic matters
+## The basic pipeline
 
-This section helps you build the mental map around C# before the language details become dense. A clear understanding here makes later chapters feel connected instead of fragmented.
-
-- Compilation and execution are separate stages.
-- The runtime adds services that ordinary application code depends on.
-- This pipeline explains why diagnostics can appear at different stages.
-
-### Try this
+The simplest model is:
 
 ```text
 C# source -> compiler -> IL -> .NET runtime -> machine code
 ```
 
-Read the example as part of a workflow, not just as isolated code. The surrounding command or tool behavior is part of what you are learning.
+Here is what each stage means:
 
-### What to do next
+- you write C# source files
+- the compiler checks the code and produces assemblies containing intermediate language and metadata
+- the .NET runtime loads those assemblies
+- the runtime prepares and executes code for the current machine
 
-Keep setup and terminology straight. Many early frustrations come from mixing tool concepts together.
+Microsoft's .NET introduction emphasizes that the runtime is not only an execution engine. It also provides services such as garbage collection, exception handling, type loading, and execution support that ordinary programs depend on.
 
-### Practice
+## Why this model matters
 
-Create a tiny console app and run the command sequence yourself so the environment becomes familiar.
+This explains several common beginner questions:
+
+- why compile-time errors happen before the program runs
+- why runtime exceptions still happen after successful compilation
+- why the same C# code can run on different operating systems
+- why library and runtime versions matter alongside source code
+
+## What the runtime adds
+
+When your app runs on .NET, it gains services such as:
+
+- automatic memory management through garbage collection
+- exception handling infrastructure
+- type and metadata loading
+- support for async tasks and many library features
+
+That is why C# programs feel higher level than writing raw machine-specific code.
+
+## A practical way to think about it
+
+Compilation answers: "Is this code valid enough to produce a program?"
+
+Runtime execution answers: "What happens when this program actually runs with real data, real files, real timing, and real environment conditions?"
+
+Both stages matter. They solve different problems.
+
+## Practice
+
+Take one compiler error and one runtime exception you have seen or can imagine. Explain why only one of them can be caught before execution starts.

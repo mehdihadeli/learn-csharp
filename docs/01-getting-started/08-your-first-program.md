@@ -1,27 +1,57 @@
-## Your First Program
+# Your First Program
 
-A first program should teach the execution loop, not overwhelm you with structure. In C#, a tiny console example is enough to show source, compile, and output in one place.
+Your first C# program should teach the development loop, not bury you in ceremony. A small console program is enough to introduce source code, compilation, program output, and the relationship between your code and the runtime.
 
-### Why this topic matters
-
-This section helps you build the mental map around C# before the language details become dense. A clear understanding here makes later chapters feel connected instead of fragmented.
-
-- Keep the example small.
-- Pay attention to the edit-build-run loop.
-- Use the first program to build confidence with the toolchain.
-
-### Try this
+## The smallest useful example
 
 ```csharp
 Console.WriteLine("Hello, C#");
 ```
 
-Read the example as part of a workflow, not just as isolated code. The surrounding command or tool behavior is part of what you are learning.
+This works because modern C# supports top-level statements. For simple programs, you can write executable statements directly instead of first declaring a `Program` class and `Main` method.
 
-### What to do next
+## What this line actually shows
 
-Keep setup and terminology straight. Many early frustrations come from mixing tool concepts together.
+Even this tiny program teaches several important ideas:
 
-### Practice
+- `Console` is a .NET type from the standard libraries
+- `WriteLine` is a method call
+- the string literal is the data being printed
+- the semicolon ends the statement
 
-Create a tiny console app and run the command sequence yourself so the environment becomes familiar.
+That is a good example of how C# often lets you start small while still learning real language structure.
+
+## A slightly richer first program
+
+Microsoft's console tutorial commonly expands the first example into user interaction:
+
+```csharp
+Console.WriteLine("What is your name?");
+string? name = Console.ReadLine();
+Console.WriteLine($"Hello, {name}!");
+```
+
+This version introduces:
+
+- output with `WriteLine`
+- input with `ReadLine`
+- variables
+- interpolated strings
+- nullable awareness through `string?`
+
+That is a much better learning step than jumping immediately into bigger program structure.
+
+## The real lesson of a first program
+
+The most important outcome is not memorizing the exact text of `Hello, World!`. It is understanding the loop:
+
+1. write or edit code
+2. run the program
+3. observe the result
+4. change the code and run again
+
+That loop is how you will learn the rest of the language.
+
+## Practice
+
+Change the output text, add one input line with `Console.ReadLine()`, and run the program again. Notice how small code changes affect the output immediately.

@@ -1,29 +1,54 @@
-## Language Versions
+# Language Versions
 
-Language versioning explains why two valid C# code samples can look different. Newer versions add syntax and analysis features, but a project only gets them when its compiler settings allow them.
+C# changes over time. New versions add syntax, refine analysis rules, and sometimes make older code look more verbose by comparison. That is why two perfectly valid C# examples can look quite different.
 
-### Why this topic matters
+## Why versioning matters
 
-This section helps you build the mental map around C# before the language details become dense. A clear understanding here makes later chapters feel connected instead of fragmented.
+A project does not automatically get every new language feature just because you saw it in a blog post or tutorial. The active language version depends on the compiler and usually on the target framework and SDK being used.
 
-- Syntax availability depends on compiler configuration.
-- A newer SDK does not automatically mean every project uses the newest language mode.
-- Version awareness helps when reading older or mixed codebases.
+That matters when:
 
-### Try this
+- reading code from older tutorials
+- copying examples from newer Microsoft docs
+- working in a repository with mixed target frameworks
+- deciding whether preview features are appropriate
+
+## The safest default
+
+The official Microsoft guidance is that the default language version chosen by the SDK is usually the right choice. It keeps the language level aligned with the target framework and reduces compatibility surprises.
+
+If you need to override it, you can do so in the project file:
 
 ```xml
 <PropertyGroup>
-  <LangVersion>latest</LangVersion>
+  <LangVersion>14.0</LangVersion>
 </PropertyGroup>
 ```
 
-Read the example as part of a workflow, not just as isolated code. The surrounding command or tool behavior is part of what you are learning.
+For preview features:
 
-### What to do next
+```xml
+<PropertyGroup>
+  <LangVersion>preview</LangVersion>
+</PropertyGroup>
+```
 
-Keep setup and terminology straight. Many early frustrations come from mixing tool concepts together.
+## What to avoid
 
-### Practice
+Microsoft explicitly warns against using `latest` casually. It can make builds less reproducible because the meaning depends on whichever compiler version is installed on a given machine.
 
-Create a tiny console app and run the command sequence yourself so the environment becomes familiar.
+In other words, `latest` feels convenient, but it can make team environments and CI less predictable.
+
+## A useful diagnostic trick
+
+If you want to know which language version a project is using, Microsoft documents a simple technique:
+
+```csharp
+#error version
+```
+
+That causes the compiler to report the current compiler and selected language version in the error output.
+
+## Practice
+
+Open a `.csproj` file and check whether it sets `LangVersion` explicitly. If it does, explain why the project might want that override instead of the default.
