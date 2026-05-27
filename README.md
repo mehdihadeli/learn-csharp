@@ -37,7 +37,7 @@ Start here:
 
 ## Table of Contents
 
-### Getting Started
+### Chapter 1: Getting Started
 
 - [What Is C#?](docs/01-getting-started/01-what-is-csharp.md)
 - [Why Learn C#?](docs/01-getting-started/02-why-learn-csharp.md)
@@ -50,7 +50,7 @@ Start here:
 - [How C# Runs Code](docs/01-getting-started/09-how-csharp-runs-code.md)
 - [How To Run C# Programs](docs/01-getting-started/10-how-to-run-csharp-programs.md)
 
-### Chapter I: Core Syntax and Types
+### Chapter 2: Core Syntax and Types
 
 - [Variables and Naming](docs/02-core-syntax-and-types/01-variables-and-naming.md)
 - [Built-in Value Types](docs/02-core-syntax-and-types/02-built-in-value-types.md)
@@ -63,7 +63,7 @@ Start here:
 - [Enums](docs/02-core-syntax-and-types/09-enums.md)
 - [Input and Output](docs/02-core-syntax-and-types/10-input-and-output.md)
 
-### Chapter II: Statements and Flow Control
+### Chapter 3: Statements and Flow Control
 
 - [Statements and Blocks](docs/03-statements-and-flow-control/01-statements-and-blocks.md)
 - [Selection Statements](docs/03-statements-and-flow-control/02-selection-statements.md)
@@ -76,7 +76,7 @@ Start here:
 - [lock Statement](docs/03-statements-and-flow-control/09-lock-statement.md)
 - [yield Statement](docs/03-statements-and-flow-control/10-yield-statement.md)
 
-### Chapter III: Members, Methods, and Functions
+### Chapter 4: Members, Methods, and Functions
 
 - [Methods](docs/04-members-methods-and-functions/01-methods.md)
 - [Method Parameters](docs/04-members-methods-and-functions/02-method-parameters.md)
@@ -89,7 +89,7 @@ Start here:
 - [Events](docs/04-members-methods-and-functions/09-events.md)
 - [Extension Methods](docs/04-members-methods-and-functions/10-extension-methods.md)
 
-### Chapter IV: Namespaces, Projects, and Organization
+### Chapter 5: Namespaces, Projects, and Organization
 
 - [Namespaces](docs/05-namespaces-projects-and-organization/01-namespaces.md)
 - [using Directives](docs/05-namespaces-projects-and-organization/02-using-directives.md)
@@ -102,7 +102,7 @@ Start here:
 - [Projects and Assemblies](docs/05-namespaces-projects-and-organization/09-projects-and-assemblies.md)
 - [NuGet Packages and References](docs/05-namespaces-projects-and-organization/10-nuget-packages-and-references.md)
 
-### Chapter V: Object-Oriented C\#
+### Chapter 6: Object-Oriented C\#
 
 - [Objects and Instances](docs/06-object-oriented-csharp/01-objects-and-instances.md)
 - [Fields and Properties](docs/06-object-oriented-csharp/02-fields-and-properties.md)
@@ -115,7 +115,7 @@ Start here:
 - [Indexers](docs/06-object-oriented-csharp/09-indexers.md)
 - [Object and Collection Initializers](docs/06-object-oriented-csharp/10-object-and-collection-initializers.md)
 
-### Chapter VI: Advanced Language Features
+### Chapter 7: Advanced Language Features
 
 - [Pattern Combinators](docs/07-advanced-language-features/01-pattern-combinators.md)
 - [Nullable Reference Types](docs/07-advanced-language-features/02-nullable-reference-types.md)
@@ -128,7 +128,7 @@ Start here:
 - [Anonymous Types](docs/07-advanced-language-features/09-anonymous-types.md)
 - [dynamic and Reflection Overview](docs/07-advanced-language-features/10-dynamic-and-reflection-overview.md)
 
-### Chapter VII: Practical C\#
+### Chapter 8: Practical C\#
 
 - [LINQ Basics](docs/08-practical-csharp/01-linq-basics.md)
 - [async and await](docs/08-practical-csharp/02-async-and-await.md)
@@ -141,21 +141,21 @@ Start here:
 - [Whats New in Recent C# Versions](docs/08-practical-csharp/09-whats-new-in-recent-csharp-versions.md)
 - [Next Steps and References](docs/08-practical-csharp/10-next-steps-and-references.md)
 
-### Chapter VIII: LINQ and Data Queries
+### Chapter 9: LINQ and Data Queries
 
 - [LINQ Overview](docs/09-linq-and-data-queries/01-linq-overview.md)
 - [Query Expressions and Method Syntax](docs/09-linq-and-data-queries/02-query-expressions-and-method-syntax.md)
 - [LINQ to Objects and Deferred Execution](docs/09-linq-and-data-queries/03-linq-to-objects-and-deferred-execution.md)
 - [IQueryable, Expression Trees, and Providers](docs/09-linq-and-data-queries/04-iqueryable-expression-trees-and-providers.md)
 
-### Chapter IX: Asynchronous Programming
+### Chapter 10: Asynchronous Programming
 
 - [async and await Fundamentals](docs/10-asynchronous-programming/01-async-and-await-fundamentals.md)
 - [Starting and Coordinating Tasks](docs/10-asynchronous-programming/02-starting-and-coordinating-tasks.md)
 - [Composing Async Workflows](docs/10-asynchronous-programming/03-composing-async-workflows.md)
 - [Async Exceptions and Task Composition](docs/10-asynchronous-programming/04-async-exceptions-and-task-composition.md)
 
-### Chapter X: C# How-To Guides
+### Chapter 11: C# How-To Guides
 
 - [Strings and Text Processing](docs/11-csharp-how-to-guides/01-strings-and-text-processing.md)
 - [Type Conversion and Parsing](docs/11-csharp-how-to-guides/02-type-conversion-and-parsing.md)
@@ -163,21 +163,21 @@ Start here:
 - [Collections and Initializers](docs/11-csharp-how-to-guides/04-collections-and-initializers.md)
 - [Delegates, Events, and Command-Line Input](docs/11-csharp-how-to-guides/05-delegates-events-and-command-line-input.md)
 
-### Chapter XI: Roslyn and Code Analysis
+### Chapter 12: Roslyn and Code Analysis
 
 - [Roslyn SDK Overview](docs/12-roslyn-and-code-analysis/01-roslyn-sdk-overview.md)
 - [Syntax and Semantic Analysis](docs/12-roslyn-and-code-analysis/02-syntax-and-semantic-analysis.md)
 - [Analyzers and Code Fixes](docs/12-roslyn-and-code-analysis/03-analyzers-and-code-fixes.md)
 - [Source Generators and Workspaces](docs/12-roslyn-and-code-analysis/04-source-generators-and-workspaces.md)
 
-### Chapter XII: What's New in C\#
+### Chapter 13: What's New in C\#
 
 - [Language Versioning and Compatibility](docs/13-whats-new-in-csharp/01-language-versioning-and-compatibility.md)
 - [What's New in C# 12](docs/13-whats-new-in-csharp/02-whats-new-in-csharp-12.md)
 - [What's New in C# 13](docs/13-whats-new-in-csharp/03-whats-new-in-csharp-13.md)
 - [What's New in C# 14 and C# 15](docs/13-whats-new-in-csharp/04-whats-new-in-csharp-14-and-15.md)
 
-### Chapter XIII: .NET Platform and Runtime
+### Chapter 14: .NET Platform and Runtime
 
 - [.NET Platform Overview](docs/14-dotnet-platform-and-runtime/01-dotnet-platform-overview.md)
 - [Runtime, CLR, and Managed Execution](docs/14-dotnet-platform-and-runtime/02-runtime-clr-and-managed-execution.md)
