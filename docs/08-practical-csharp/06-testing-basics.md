@@ -2,6 +2,8 @@
 
 Testing helps confirm behavior and protect code from accidental regressions. At a basic level, tests answer a simple question: when this code runs with these inputs, does it behave the way we expect?
 
+Original Microsoft Learn reference: [Microsoft Learn C# guide](https://learn.microsoft.com/dotnet/csharp/).
+
 This is practical because real software changes constantly. Without tests, every change increases the risk of silently breaking something that used to work.
 
 ## Why testing helps design

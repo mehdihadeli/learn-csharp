@@ -2,6 +2,8 @@
 
 Object and collection initializers make C# code more expressive by separating construction from member assignment. They are small language features, but they improve readability in many everyday cases.
 
+Original Microsoft Learn reference: [Microsoft Learn C# how-to guides](https://learn.microsoft.com/dotnet/csharp/how-to/).
+
 ## Why these features matter in practice
 
 Initializers are helpful because real code often spends a lot of time setting up objects, test data, options, and collections. A clear setup block is usually easier to scan than a long series of assignment statements.

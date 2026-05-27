@@ -2,6 +2,8 @@
 
 Roslyn is the .NET Compiler Platform. It is more than the component that turns C# source code into assemblies. It also exposes the compiler's internal models so tools can inspect, analyze, and transform code in structured ways.
 
+Original Microsoft Learn reference: [Microsoft Learn Roslyn SDK](https://learn.microsoft.com/dotnet/csharp/roslyn-sdk/).
+
 That is why Roslyn powers features such as syntax highlighting, code navigation, quick fixes, analyzers, refactorings, and source generators.
 
 ## Why Roslyn matters

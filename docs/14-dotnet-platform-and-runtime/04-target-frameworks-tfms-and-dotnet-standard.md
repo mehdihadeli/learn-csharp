@@ -2,6 +2,8 @@
 
 A target framework tells the .NET SDK which platform version and API surface your project is built for. The short name for that target is a target framework moniker, or TFM.
 
+Original Microsoft Learn reference: [Microsoft Learn Introduction to .NET](https://learn.microsoft.com/dotnet/core/introduction).
+
 ## A practical mental model
 
 ```mermaid

@@ -2,6 +2,8 @@
 
 C# language versions are tied closely to the compiler and, in practice, to the .NET SDK and target framework you use. That relationship matters because new syntax is not only a compiler feature. Some language features also rely on runtime or library support.
 
+Original Microsoft Learn reference: [Microsoft Learn What's new in C#](https://learn.microsoft.com/dotnet/csharp/whats-new/).
+
 ## A practical mental model
 
 ```mermaid

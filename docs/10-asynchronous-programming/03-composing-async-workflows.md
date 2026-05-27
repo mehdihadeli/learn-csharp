@@ -2,6 +2,8 @@
 
 Real async code is usually more than one awaited call. A useful application often combines validation, data retrieval, transformation, error handling, logging, cancellation, and result construction into one larger workflow.
 
+Original Microsoft Learn reference: [Microsoft Learn asynchronous programming in C#](https://learn.microsoft.com/dotnet/csharp/asynchronous-programming/).
+
 The goal is not just to make the code asynchronous. The goal is to keep the flow understandable as the workflow grows.
 
 ## Why composition matters

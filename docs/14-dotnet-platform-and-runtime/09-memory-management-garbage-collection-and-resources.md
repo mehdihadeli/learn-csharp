@@ -2,6 +2,8 @@
 
 .NET uses automatic memory management for managed objects. The garbage collector tracks reachable objects and reclaims memory for objects that are no longer used.
 
+Original Microsoft Learn reference: [Microsoft Learn Introduction to .NET](https://learn.microsoft.com/dotnet/core/introduction).
+
 ## A practical mental model
 
 ```mermaid

@@ -2,6 +2,8 @@
 
 Asynchronous code does not remove failures. It changes where and when you observe them. A task can complete successfully, be canceled, or fault with an exception. Understanding that lifecycle is essential for writing reliable async code.
 
+Original Microsoft Learn reference: [Microsoft Learn asynchronous programming in C#](https://learn.microsoft.com/dotnet/csharp/asynchronous-programming/).
+
 ## A task lifecycle mental model
 
 ```mermaid

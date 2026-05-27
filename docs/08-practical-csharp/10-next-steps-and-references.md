@@ -2,6 +2,8 @@
 
 Once the language feels comfortable, the next step is to connect C# to the broader .NET platform. Real software development is not only about syntax. It is about libraries, tooling, runtime behavior, debugging, testing, packaging, deployment, and long-term maintenance.
 
+Original Microsoft Learn reference: [Microsoft Learn C# guide](https://learn.microsoft.com/dotnet/csharp/).
+
 This chapter closes the practical section by helping you see where C# knowledge leads next.
 
 ## What comes after language basics

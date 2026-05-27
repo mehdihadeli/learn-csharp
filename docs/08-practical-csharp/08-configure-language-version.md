@@ -2,6 +2,8 @@
 
 Language version configuration controls which C# syntax and compiler features a project is allowed to use. This is practical because teams need consistency, compatibility, and predictable builds across machines and environments.
 
+Original Microsoft Learn reference: [Microsoft Learn C# guide](https://learn.microsoft.com/dotnet/csharp/).
+
 ## Why it matters
 
 New C# features are exciting, but a project should not adopt them carelessly. The chosen language version affects:

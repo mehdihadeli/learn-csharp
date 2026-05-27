@@ -2,6 +2,8 @@
 
 The newest C# versions need the most careful explanation because the support picture changes fastest. Stable features should be taught as normal language features. Preview features should be labeled clearly so readers do not confuse exploration with production guidance.
 
+Original Microsoft Learn reference: [Microsoft Learn What's new in C#](https://learn.microsoft.com/dotnet/csharp/whats-new/).
+
 ## A practical mental model
 
 ```mermaid

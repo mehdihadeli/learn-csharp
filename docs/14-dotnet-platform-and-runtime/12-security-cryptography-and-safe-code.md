@@ -2,6 +2,8 @@
 
 .NET provides APIs and platform guidance for writing safer code. Security is not a single feature; it appears in input handling, secrets, cryptography, dependency updates, file access, networking, and deployment choices.
 
+Original Microsoft Learn reference: [Microsoft Learn Introduction to .NET](https://learn.microsoft.com/dotnet/core/introduction).
+
 ## A practical mental model
 
 ```mermaid

@@ -2,6 +2,8 @@
 
 Asynchronous programming matters because many real programs spend time waiting. They wait for network responses, file I/O, timers, database calls, process output, or other external work. If a program blocks a thread during that wait, the application can become less responsive and less scalable.
 
+Original Microsoft Learn reference: [Microsoft Learn asynchronous programming in C#](https://learn.microsoft.com/dotnet/csharp/asynchronous-programming/).
+
 `async` and `await` let C# express this waiting in a readable way. Instead of manually wiring callbacks, continuation objects, or thread logic, you can write code that reads almost like ordinary sequential code while still allowing the runtime to use threads efficiently.
 
 ## A mental model

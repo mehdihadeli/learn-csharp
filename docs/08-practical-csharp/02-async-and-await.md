@@ -2,6 +2,8 @@
 
 Asynchronous programming lets a program represent work that completes later without blocking the current thread while it waits. In real applications, this matters because programs often wait for network responses, file I/O, databases, timers, and external services.
 
+Original Microsoft Learn reference: [Microsoft Learn C# guide](https://learn.microsoft.com/dotnet/csharp/).
+
 `async` and `await` make that waiting readable.
 
 ## Why this matters in practical code

@@ -2,6 +2,8 @@
 
 LINQ to Objects means using LINQ against in-memory collections such as arrays, lists, dictionaries, and other sequences that implement `IEnumerable<T>`. This is the best place to learn core LINQ behavior because the data is local and the execution model is easier to observe.
 
+Original Microsoft Learn reference: [Microsoft Learn LINQ for C#](https://learn.microsoft.com/dotnet/csharp/linq/).
+
 ## Why this chapter matters
 
 Many LINQ mistakes come from not knowing when a query actually runs. Deferred execution is one of the most important LINQ ideas because it affects correctness, performance, and surprising behavior.

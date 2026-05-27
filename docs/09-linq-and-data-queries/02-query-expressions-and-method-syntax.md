@@ -2,6 +2,8 @@
 
 LINQ has two main surface styles: query expressions and method syntax. Query expressions use keywords such as `from`, `where`, and `select`. Method syntax uses chained extension methods such as `Where`, `Select`, and `OrderBy`.
 
+Original Microsoft Learn reference: [Microsoft Learn LINQ for C#](https://learn.microsoft.com/dotnet/csharp/linq/).
+
 Both styles are valid. Both are important. Good C# developers should be able to read and write each one.
 
 ## The relationship between the two styles

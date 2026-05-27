@@ -2,6 +2,8 @@
 
 Real applications rarely receive values in exactly the type they need. Input often arrives as text, objects, bytes, JSON values, or loosely typed data. Conversion and parsing are the bridge between that raw input and the strongly typed code you want to write.
 
+Original Microsoft Learn reference: [Microsoft Learn C# how-to guides](https://learn.microsoft.com/dotnet/csharp/how-to/).
+
 ## A practical mental model
 
 It helps to separate three different ideas:

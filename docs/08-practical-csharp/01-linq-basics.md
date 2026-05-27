@@ -2,6 +2,8 @@
 
 LINQ gives C# a shared vocabulary for working with data. Instead of writing explicit loops for every filtering, sorting, or transformation step, LINQ lets you build data pipelines from small query operations.
 
+Original Microsoft Learn reference: [Microsoft Learn C# guide](https://learn.microsoft.com/dotnet/csharp/).
+
 This is a practical topic because application code constantly works with collections: users, orders, files, configuration entries, log records, API results, and more.
 
 ## Why LINQ matters in real code

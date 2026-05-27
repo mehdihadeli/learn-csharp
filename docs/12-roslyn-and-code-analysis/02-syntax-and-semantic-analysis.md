@@ -2,6 +2,8 @@
 
 The difference between syntax and semantics is the foundation of Roslyn work. Syntax tells you how code is written. Semantics tell you what that code means.
 
+Original Microsoft Learn reference: [Microsoft Learn Roslyn SDK](https://learn.microsoft.com/dotnet/csharp/roslyn-sdk/).
+
 ## A simple comparison
 
 ```mermaid

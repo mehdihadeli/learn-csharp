@@ -2,6 +2,8 @@
 
 LINQ stands for Language Integrated Query. The name matters because LINQ is not only one helper class or one library call. It is a combination of language syntax, extension methods, delegates, generic interfaces, and library conventions that let C# describe data operations in a consistent way.
 
+Original Microsoft Learn reference: [Microsoft Learn LINQ for C#](https://learn.microsoft.com/dotnet/csharp/linq/).
+
 Before LINQ, filtering, sorting, grouping, and projecting values were still possible, but the code was often more repetitive. LINQ gives those operations a shared vocabulary that works across arrays, lists, dictionaries, XML, databases, and other data sources.
 
 ## Why LINQ matters

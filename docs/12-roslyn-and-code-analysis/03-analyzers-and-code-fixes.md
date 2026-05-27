@@ -2,6 +2,8 @@
 
 Analyzers let teams move coding guidance out of documents and into the compiler pipeline. Instead of hoping every developer remembers a rule, an analyzer can detect the issue automatically and report a diagnostic in the editor or build output.
 
+Original Microsoft Learn reference: [Microsoft Learn Roslyn SDK](https://learn.microsoft.com/dotnet/csharp/roslyn-sdk/).
+
 ## The basic workflow
 
 ```mermaid

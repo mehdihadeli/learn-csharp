@@ -2,6 +2,8 @@
 
 At first glance, `IEnumerable<T>` and `IQueryable<T>` can look almost identical. Both support LINQ operators. Both let you write query pipelines. The difference is in what those pipelines mean.
 
+Original Microsoft Learn reference: [Microsoft Learn LINQ for C#](https://learn.microsoft.com/dotnet/csharp/linq/).
+
 This topic matters because the same query shape can behave very differently depending on whether the data is already in memory or whether a provider must translate the query into something else, such as SQL.
 
 ## `IEnumerable<T>` versus `IQueryable<T>`

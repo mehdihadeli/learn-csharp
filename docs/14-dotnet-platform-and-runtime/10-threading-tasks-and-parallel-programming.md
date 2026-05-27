@@ -2,6 +2,8 @@
 
 .NET supports several ways to do work concurrently. C# `async` and `await` are the most common entry point, but the platform also includes threads, tasks, cancellation, timers, channels, locks, and parallel loops.
 
+Original Microsoft Learn reference: [Microsoft Learn Introduction to .NET](https://learn.microsoft.com/dotnet/core/introduction).
+
 ## A practical mental model
 
 ```mermaid

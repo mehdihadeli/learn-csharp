@@ -2,6 +2,8 @@
 
 Equality feels simple until a program needs correct behavior in dictionaries, sets, searches, tests, and sorting rules. At that point, the difference between identity, value equality, and ordering semantics becomes important.
 
+Original Microsoft Learn reference: [Microsoft Learn C# how-to guides](https://learn.microsoft.com/dotnet/csharp/how-to/).
+
 ## Three related but different ideas
 
 It helps to separate these concepts clearly:
