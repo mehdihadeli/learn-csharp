@@ -42,6 +42,8 @@ That means:
 - the compiler can enforce string-only operations
 - callers do not need unsafe casting when reading values back
 
+Generic collections are one of the most practical examples of generics because they combine reuse with strong typing. Detailed collection-type guidance belongs earlier in the learning path, so Chapter 2 covers lists, dictionaries, sets, arrays, and tuples separately. Here, the important idea is that generics make those collections type-safe.
+
 ## Generic methods
 
 Methods can also be generic.
@@ -166,7 +168,7 @@ The main ideas are:
 - types and methods can use type parameters such as `T`
 - concrete types are supplied later
 - generics preserve compile-time safety better than `object`
-- collections are the most common beginner example, but generics are much broader than that
+- collections are the most common beginner example, but generics are much broader than collections alone
 
 Generics are one of the most important features for writing scalable, reusable C# code.
 
