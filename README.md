@@ -1,17 +1,17 @@
-# Learn C\#
+# Learn C# 💡
 
 Learn C# in a structured, docs-first way.
 
 This repository is built for learners who want more than scattered syntax notes or disconnected code snippets. It follows the official Microsoft C# and .NET documentation as the source of truth, but explains the ideas in a slower, more connected order with examples, practical notes, and companion notebooks.
 
-## What This Repository Includes
+## What This Repository Includes 📚
 
-- guided lessons under [docs](docs)
-- interactive notebook companions under [notebooks](notebooks)
-- a practical learning path from C# foundations through syntax, control flow, methods, object-oriented programming, advanced language features, LINQ, asynchronous programming, Roslyn, and .NET runtime topics
-- concept-first explanations that help beginners, developers coming from other languages, and working engineers build a stronger mental model before jumping into framework-specific code
+- guided lessons under [docs](docs) 📖
+- interactive notebook companions under [notebooks](notebooks) 📓
+- a practical learning path from C# foundations through syntax, control flow, methods, object-oriented programming, advanced language features, LINQ, asynchronous programming, Roslyn, and .NET runtime topics 🧭
+- concept-first explanations that help beginners, developers coming from other languages, and working engineers build a stronger mental model before jumping into framework-specific code 🧠
 
-## Table of Contents
+## Table of Contents 🗂️
 
 - [00 Introduction](docs/00-introduction.md)
 - [01 Getting Started](docs/01-getting-started/01-what-is-csharp.md)
@@ -142,7 +142,16 @@ This repository is built for learners who want more than scattered syntax notes 
   - [11 Publishing, Deployment, and Versioning](docs/14-dotnet-platform-and-runtime/11-publishing-deployment-and-versioning.md)
   - [12 Security, Cryptography, and Safe Code](docs/14-dotnet-platform-and-runtime/12-security-cryptography-and-safe-code.md)
 
-## References
+## Notebooks 📓
+
+The [notebooks](notebooks) folder contains hands-on companions to the main lessons.
+
+- [Notebook Companions README](notebooks/README.md)
+- [Notebook Introduction](notebooks/00-introduction.ipynb)
+
+Use `docs/` for the full explanations and `notebooks/` for runnable examples and small experiments.
+
+## References 🔗
 
 - [C# Language Reference](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/)
 - [.NET Fundamentals](https://learn.microsoft.com/en-us/dotnet/fundamentals/)
@@ -154,16 +163,7 @@ This repository is built for learners who want more than scattered syntax notes 
 - [System.Text.Json](https://learn.microsoft.com/en-us/dotnet/standard/serialization/system-text-json/overview)
 - [NuGet Documentation](https://learn.microsoft.com/en-us/nuget/)
 
-## Notebooks
-
-The [notebooks](notebooks) folder contains hands-on companions to the main lessons.
-
-- [Notebook Companions README](notebooks/README.md)
-- [Notebook Introduction](notebooks/00-introduction.ipynb)
-
-Use `docs/` for the full explanations and `notebooks/` for runnable examples and small experiments.
-
-## License
+## License 📄
 
 This repository is licensed under the `MIT` License.
 
