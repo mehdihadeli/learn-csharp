@@ -21,12 +21,13 @@ This repository aims to stay close to the spirit of the official Microsoft docum
 - C# fundamentals in a logical order
 - correct mental models for the type system and statements
 - modern .NET CLI and project workflows
+- core .NET runtime, library, packaging, diagnostics, and deployment concepts
 - practical examples you can run and modify
 - modern C# practices, not outdated habits
 
 ## How To Use This Repository
 
-The full learning content lives under the [docs](docs) folder and is also intended for Docusaurus publishing.
+The full learning content lives under the [docs](docs) folder and is also used by the VitePress site.
 
 Interactive notebook companions live under the [notebooks](notebooks) folder for runnable .NET and C# examples that mirror the chapter layout.
 
@@ -140,11 +141,65 @@ Start here:
 - [Whats New in Recent C# Versions](docs/08-practical-csharp/09-whats-new-in-recent-csharp-versions.md)
 - [Next Steps and References](docs/08-practical-csharp/10-next-steps-and-references.md)
 
+### Chapter VIII: LINQ and Data Queries
+
+- [LINQ Overview](docs/09-linq-and-data-queries/01-linq-overview.md)
+- [Query Expressions and Method Syntax](docs/09-linq-and-data-queries/02-query-expressions-and-method-syntax.md)
+- [LINQ to Objects and Deferred Execution](docs/09-linq-and-data-queries/03-linq-to-objects-and-deferred-execution.md)
+- [IQueryable, Expression Trees, and Providers](docs/09-linq-and-data-queries/04-iqueryable-expression-trees-and-providers.md)
+
+### Chapter IX: Asynchronous Programming
+
+- [async and await Fundamentals](docs/10-asynchronous-programming/01-async-and-await-fundamentals.md)
+- [Starting and Coordinating Tasks](docs/10-asynchronous-programming/02-starting-and-coordinating-tasks.md)
+- [Composing Async Workflows](docs/10-asynchronous-programming/03-composing-async-workflows.md)
+- [Async Exceptions and Task Composition](docs/10-asynchronous-programming/04-async-exceptions-and-task-composition.md)
+
+### Chapter X: C# How-To Guides
+
+- [Strings and Text Processing](docs/11-csharp-how-to-guides/01-strings-and-text-processing.md)
+- [Type Conversion and Parsing](docs/11-csharp-how-to-guides/02-type-conversion-and-parsing.md)
+- [Equality and Ordering](docs/11-csharp-how-to-guides/03-equality-and-ordering.md)
+- [Collections and Initializers](docs/11-csharp-how-to-guides/04-collections-and-initializers.md)
+- [Delegates, Events, and Command-Line Input](docs/11-csharp-how-to-guides/05-delegates-events-and-command-line-input.md)
+
+### Chapter XI: Roslyn and Code Analysis
+
+- [Roslyn SDK Overview](docs/12-roslyn-and-code-analysis/01-roslyn-sdk-overview.md)
+- [Syntax and Semantic Analysis](docs/12-roslyn-and-code-analysis/02-syntax-and-semantic-analysis.md)
+- [Analyzers and Code Fixes](docs/12-roslyn-and-code-analysis/03-analyzers-and-code-fixes.md)
+- [Source Generators and Workspaces](docs/12-roslyn-and-code-analysis/04-source-generators-and-workspaces.md)
+
+### Chapter XII: What's New in C\#
+
+- [Language Versioning and Compatibility](docs/13-whats-new-in-csharp/01-language-versioning-and-compatibility.md)
+- [What's New in C# 12](docs/13-whats-new-in-csharp/02-whats-new-in-csharp-12.md)
+- [What's New in C# 13](docs/13-whats-new-in-csharp/03-whats-new-in-csharp-13.md)
+- [What's New in C# 14 and C# 15](docs/13-whats-new-in-csharp/04-whats-new-in-csharp-14-and-15.md)
+
+### Chapter XIII: .NET Platform and Runtime
+
+- [.NET Platform Overview](docs/14-dotnet-platform-and-runtime/01-dotnet-platform-overview.md)
+- [Runtime, CLR, and Managed Execution](docs/14-dotnet-platform-and-runtime/02-runtime-clr-and-managed-execution.md)
+- [Common Type System and Base Class Library](docs/14-dotnet-platform-and-runtime/03-common-type-system-and-base-class-library.md)
+- [Target Frameworks, TFMs, and .NET Standard](docs/14-dotnet-platform-and-runtime/04-target-frameworks-tfms-and-dotnet-standard.md)
+- [.NET SDK, Project System, and MSBuild](docs/14-dotnet-platform-and-runtime/05-dotnet-sdk-project-system-and-msbuild.md)
+- [NuGet Packages and Dependency Management](docs/14-dotnet-platform-and-runtime/06-nuget-packages-and-dependency-management.md)
+- [Configuration, Dependency Injection, and Generic Host](docs/14-dotnet-platform-and-runtime/07-configuration-dependency-injection-and-generic-host.md)
+- [Logging, Diagnostics, and Observability](docs/14-dotnet-platform-and-runtime/08-logging-diagnostics-and-observability.md)
+- [Memory Management, Garbage Collection, and Resources](docs/14-dotnet-platform-and-runtime/09-memory-management-garbage-collection-and-resources.md)
+- [Threading, Tasks, and Parallel Programming](docs/14-dotnet-platform-and-runtime/10-threading-tasks-and-parallel-programming.md)
+- [Publishing, Deployment, and Versioning](docs/14-dotnet-platform-and-runtime/11-publishing-deployment-and-versioning.md)
+- [Security, Cryptography, and Safe Code](docs/14-dotnet-platform-and-runtime/12-security-cryptography-and-safe-code.md)
+
 ## References
 
 - [C# Language Reference](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/)
+- [.NET Fundamentals](https://learn.microsoft.com/en-us/dotnet/fundamentals/)
 - [.NET Documentation](https://learn.microsoft.com/en-us/dotnet/)
 - [.NET CLI Overview](https://learn.microsoft.com/en-us/dotnet/core/tools/)
+- [.NET Runtime Libraries](https://learn.microsoft.com/en-us/dotnet/standard/runtime-libraries-overview)
+- [.NET Diagnostics](https://learn.microsoft.com/en-us/dotnet/core/diagnostics/)
 - [C# Language Versioning](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/configure-language-version)
 - [System.Text.Json](https://learn.microsoft.com/en-us/dotnet/standard/serialization/system-text-json/overview)
 - [NuGet Documentation](https://learn.microsoft.com/en-us/nuget/)

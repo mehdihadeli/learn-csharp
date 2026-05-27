@@ -1,5 +1,4 @@
 node_modules/
-.docusaurus/
 build/
 .cache-loader/
 .env
@@ -7,6 +6,8 @@ build/
 Thumbs.db
 Desktop.ini
 .vscode/
+**/.vitepress/dist
+**/.vitepress/cache
 __pycache__/
 *.py[cod]
 .venv/
