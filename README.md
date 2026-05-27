@@ -33,9 +33,12 @@ This repository is built for learners who want more than scattered syntax notes 
   - [05 Operators and Expressions](docs/02-core-syntax-and-types/05-operators-and-expressions.md)
   - [06 Strings and Characters](docs/02-core-syntax-and-types/06-strings-and-characters.md)
   - [07 Arrays](docs/02-core-syntax-and-types/07-arrays.md)
-  - [08 Tuples](docs/02-core-syntax-and-types/08-tuples.md)
-  - [09 Enums](docs/02-core-syntax-and-types/09-enums.md)
-  - [10 Input and Output](docs/02-core-syntax-and-types/10-input-and-output.md)
+  - [08 Lists](docs/02-core-syntax-and-types/08-lists.md)
+  - [09 Dictionaries](docs/02-core-syntax-and-types/09-dictionaries.md)
+  - [10 Sets](docs/02-core-syntax-and-types/10-sets.md)
+  - [11 Tuples](docs/02-core-syntax-and-types/11-tuples.md)
+  - [12 Enums](docs/02-core-syntax-and-types/12-enums.md)
+  - [13 Input and Output](docs/02-core-syntax-and-types/13-input-and-output.md)
 - [03 Statements and Flow Control](docs/03-statements-and-flow-control/01-statements-and-blocks.md)
   - [01 Statements and Blocks](docs/03-statements-and-flow-control/01-statements-and-blocks.md)
   - [02 Selection Statements](docs/03-statements-and-flow-control/02-selection-statements.md)
@@ -141,6 +144,10 @@ This repository is built for learners who want more than scattered syntax notes 
   - [10 Threading, Tasks, and Parallel Programming](docs/14-dotnet-platform-and-runtime/10-threading-tasks-and-parallel-programming.md)
   - [11 Publishing, Deployment, and Versioning](docs/14-dotnet-platform-and-runtime/11-publishing-deployment-and-versioning.md)
   - [12 Security, Cryptography, and Safe Code](docs/14-dotnet-platform-and-runtime/12-security-cryptography-and-safe-code.md)
+  - [13 Streams and IO](docs/14-dotnet-platform-and-runtime/13-streams-and-io.md)
+  - [14 Collection Interfaces and Specialized Collections](docs/14-dotnet-platform-and-runtime/14-collection-interfaces-and-specialized-collections.md)
+  - [15 Synchronization and Shared State](docs/14-dotnet-platform-and-runtime/15-synchronization-and-shared-state.md)
+  - [16 Parallel Processing and Data Parallelism](docs/14-dotnet-platform-and-runtime/16-parallel-processing-and-data-parallelism.md)
 
 ## Notebooks 📓
 
