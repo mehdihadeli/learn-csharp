@@ -2,7 +2,7 @@
 
 C# 12 was the language version that shipped with .NET 8. It added features that improved day-to-day expressiveness, especially around construction, collection creation, and low-level performance-oriented scenarios.
 
-Original Microsoft Learn reference: [Microsoft Learn What's new in C#](https://learn.microsoft.com/dotnet/csharp/whats-new/).
+Original Microsoft Learn reference: [What's new in C# 12](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-12).
 
 ## A practical theme for C# 12
 

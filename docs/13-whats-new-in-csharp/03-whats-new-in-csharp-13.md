@@ -2,7 +2,7 @@
 
 C# 13 shipped with .NET 9 and continued the trend of improving expressiveness while also unlocking more advanced scenarios for `ref struct`, spans, and library authors.
 
-Original Microsoft Learn reference: [Microsoft Learn What's new in C#](https://learn.microsoft.com/dotnet/csharp/whats-new/).
+Original Microsoft Learn reference: [What's new in C# 13](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-13).
 
 ## A practical theme for C# 13
 

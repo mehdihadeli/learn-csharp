@@ -2,7 +2,7 @@
 
 The Common Type System defines how .NET understands types, values, objects, inheritance, interfaces, arrays, delegates, and generics. The Base Class Library supplies the everyday APIs that C# programs use.
 
-Original Microsoft Learn reference: [Microsoft Learn Introduction to .NET](https://learn.microsoft.com/dotnet/core/introduction).
+Original Microsoft Learn references: [Common type system](https://learn.microsoft.com/en-us/dotnet/standard/base-types/common-type-system) and [Introduction to .NET: Components](https://learn.microsoft.com/en-us/dotnet/core/introduction#components).
 
 ## A practical mental model
 

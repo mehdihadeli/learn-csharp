@@ -2,7 +2,7 @@
 
 The .NET SDK provides the `dotnet` command, project templates, compilers, build targets, restore logic, and publishing tools. SDK-style project files describe what to build and how MSBuild should build it.
 
-Original Microsoft Learn reference: [Microsoft Learn Introduction to .NET](https://learn.microsoft.com/dotnet/core/introduction).
+Original Microsoft Learn references: [.NET project SDKs](https://learn.microsoft.com/en-us/dotnet/core/project-sdk/overview) and [MSBuild](https://learn.microsoft.com/en-us/visualstudio/msbuild/msbuild?view=vs-2022).
 
 ## A practical mental model
 

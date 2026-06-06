@@ -2,7 +2,7 @@
 
 Documentation comments turn source-level intent into structured information that tools can show to other developers. In C#, these comments are usually written with `///` and can appear in IntelliSense, generated documentation, and editor tooltips.
 
-Original Microsoft Learn reference: [Microsoft Learn C# guide](https://learn.microsoft.com/dotnet/csharp/).
+Original Microsoft Learn reference: [Recommended XML tags for C# documentation comments](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/xmldoc/recommended-tags).
 
 They matter most when an API should be understandable without forcing the reader to open the implementation.
 

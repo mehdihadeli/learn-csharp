@@ -2,7 +2,7 @@
 
 Strings appear everywhere: user input, file paths, logs, commands, JSON payloads, URLs, identifiers, and messages shown to users. That is why string handling deserves a practical guide instead of being treated as a small syntax topic.
 
-Original Microsoft Learn reference: [Microsoft Learn C# how-to guides](https://learn.microsoft.com/dotnet/csharp/how-to/).
+Original Microsoft Learn references: [Strings in .NET](https://learn.microsoft.com/en-us/dotnet/standard/base-types/strings) and [StringBuilder](https://learn.microsoft.com/en-us/dotnet/standard/base-types/stringbuilder).
 
 ## A practical mental model
 

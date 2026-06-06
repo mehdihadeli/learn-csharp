@@ -2,7 +2,7 @@
 
 Building creates output for development. Publishing creates output intended to run somewhere else. .NET publishing options affect size, portability, startup time, runtime requirements, and compatibility.
 
-Original Microsoft Learn reference: [Microsoft Learn Introduction to .NET](https://learn.microsoft.com/dotnet/core/introduction).
+Original Microsoft Learn reference: [.NET application publishing overview](https://learn.microsoft.com/en-us/dotnet/core/deploying/).
 
 ## A practical mental model
 

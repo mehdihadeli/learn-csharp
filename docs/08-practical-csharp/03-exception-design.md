@@ -2,7 +2,7 @@
 
 Exception design is the practice of deciding when code should fail by throwing an exception, what kind of exception should be thrown, and how much useful context should be preserved for the caller.
 
-Original Microsoft Learn reference: [Microsoft Learn C# guide](https://learn.microsoft.com/dotnet/csharp/).
+Original Microsoft Learn reference: [Best practices for exceptions](https://learn.microsoft.com/en-us/dotnet/standard/exceptions/best-practices-for-exceptions).
 
 This is a practical topic because poor exception design makes real systems harder to debug, harder to use correctly, and easier to break in confusing ways.
 

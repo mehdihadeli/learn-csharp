@@ -2,7 +2,7 @@
 
 Working with files and directories is one of the clearest ways to move from pure language syntax into real application behavior. File-system code deals with external state, permissions, missing paths, encoding, and failure cases that do not exist in isolated in-memory examples.
 
-Original Microsoft Learn reference: [Microsoft Learn C# guide](https://learn.microsoft.com/dotnet/csharp/).
+Original Microsoft Learn reference: [File and stream I/O](https://learn.microsoft.com/en-us/dotnet/standard/io/).
 
 That makes it a good place to practice defensive programming.
 

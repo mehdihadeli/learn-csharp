@@ -2,7 +2,7 @@
 
 This guide brings together three practical topics that show up often in small tools and console programs. Delegates model executable behavior, events model notifications, and command-line input gives a program an external interface.
 
-Original Microsoft Learn reference: [Microsoft Learn C# how-to guides](https://learn.microsoft.com/dotnet/csharp/how-to/).
+Original Microsoft Learn references: [Delegates](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/delegates/), [Events](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/events/), and [Main and command-line arguments](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/program-structure/main-command-line).
 
 These topics fit well together because small tools often need to:
 

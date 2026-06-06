@@ -2,7 +2,7 @@
 
 .NET is the platform that runs C# programs, supplies the standard libraries, and provides the SDK tools used to build, test, package, and publish applications. C# is the language; .NET is the runtime, library, and tooling ecosystem that makes C# useful beyond isolated syntax examples.
 
-Original Microsoft Learn reference: [Microsoft Learn Introduction to .NET](https://learn.microsoft.com/dotnet/core/introduction).
+Original Microsoft Learn reference: [Introduction to .NET](https://learn.microsoft.com/en-us/dotnet/core/introduction).
 
 ## Why this chapter matters
 

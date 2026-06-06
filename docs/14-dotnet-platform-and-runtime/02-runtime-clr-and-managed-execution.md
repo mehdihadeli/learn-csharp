@@ -2,7 +2,7 @@
 
 The .NET runtime is the execution environment for managed code. It loads assemblies, verifies and executes code, manages memory, handles exceptions, and provides services that C# programs depend on.
 
-Original Microsoft Learn reference: [Microsoft Learn Introduction to .NET](https://learn.microsoft.com/dotnet/core/introduction).
+Original Microsoft Learn references: [Common Language Runtime overview](https://learn.microsoft.com/en-us/dotnet/standard/clr) and [Managed execution process](https://learn.microsoft.com/en-us/dotnet/standard/managed-execution-process).
 
 ## A practical mental model
 

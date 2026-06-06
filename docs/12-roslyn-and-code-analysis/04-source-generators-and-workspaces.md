@@ -2,7 +2,7 @@
 
 Source generators and workspaces sit at two powerful ends of the Roslyn platform. Source generators participate in compilation by adding generated code. Workspaces model entire solutions so tools can analyze and edit code across many files and projects.
 
-Original Microsoft Learn reference: [Microsoft Learn Roslyn SDK](https://learn.microsoft.com/dotnet/csharp/roslyn-sdk/).
+Original Microsoft Learn references: [The .NET Compiler Platform SDK: Source generators](https://learn.microsoft.com/en-us/dotnet/csharp/roslyn-sdk/#source-generators) and [Work with a workspace](https://learn.microsoft.com/en-us/dotnet/csharp/roslyn-sdk/work-with-workspace).
 
 ## Two different kinds of power
 

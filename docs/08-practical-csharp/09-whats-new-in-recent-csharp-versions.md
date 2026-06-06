@@ -2,7 +2,7 @@
 
 Recent C# versions introduced features that improve conciseness, correctness, expressiveness, and everyday developer productivity. Learning the recent changes helps you read modern codebases and decide which newer features are worth adopting deliberately.
 
-Original Microsoft Learn reference: [Microsoft Learn C# guide](https://learn.microsoft.com/dotnet/csharp/).
+Original Microsoft Learn reference: [C# version history](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-version-history).
 
 This is practical because most real repositories are not frozen in one language era. You will often read code written across several C# versions.
 

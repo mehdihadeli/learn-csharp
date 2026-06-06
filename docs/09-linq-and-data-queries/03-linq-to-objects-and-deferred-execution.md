@@ -2,7 +2,7 @@
 
 LINQ to Objects means using LINQ against in-memory collections such as arrays, lists, dictionaries, and other sequences that implement `IEnumerable<T>`. This is the best place to learn core LINQ behavior because the data is local and the execution model is easier to observe.
 
-Original Microsoft Learn reference: [Microsoft Learn LINQ for C#](https://learn.microsoft.com/dotnet/csharp/linq/).
+Original Microsoft Learn reference: [Introduction to LINQ Queries in C#](https://learn.microsoft.com/en-us/dotnet/csharp/linq/get-started/introduction-to-linq-queries#classification-of-standard-query-operators-by-manner-of-execution).
 
 ## Why this chapter matters
 

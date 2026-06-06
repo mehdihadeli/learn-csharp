@@ -2,7 +2,7 @@
 
 Serialization turns objects into a data format and deserialization turns that format back into objects. In modern .NET, `System.Text.Json` is the built-in JSON serializer used in many everyday scenarios.
 
-Original Microsoft Learn reference: [Microsoft Learn C# guide](https://learn.microsoft.com/dotnet/csharp/).
+Original Microsoft Learn reference: [JSON serialization and deserialization in .NET overview](https://learn.microsoft.com/en-us/dotnet/standard/serialization/system-text-json/overview).
 
 This matters in practical code because JSON appears everywhere: web APIs, configuration files, caches, logs, and message-based systems.
 

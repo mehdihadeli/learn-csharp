@@ -2,7 +2,7 @@
 
 NuGet is the package manager for .NET. It lets projects reference reusable libraries, analyzers, build tools, and source generators from package feeds such as nuget.org or private registries.
 
-Original Microsoft Learn reference: [Microsoft Learn Introduction to .NET](https://learn.microsoft.com/dotnet/core/introduction).
+Original Microsoft Learn reference: [What is NuGet?](https://learn.microsoft.com/en-us/nuget/what-is-nuget).
 
 ## A practical mental model
 

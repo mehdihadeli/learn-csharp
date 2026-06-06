@@ -2,7 +2,7 @@
 
 Modern .NET libraries share common infrastructure for configuration, dependency injection, logging, and application lifetime management. These concepts are not limited to web applications.
 
-Original Microsoft Learn reference: [Microsoft Learn Introduction to .NET](https://learn.microsoft.com/dotnet/core/introduction).
+Original Microsoft Learn references: [Configuration in .NET](https://learn.microsoft.com/en-us/dotnet/core/extensions/configuration), [Dependency injection in .NET](https://learn.microsoft.com/en-us/dotnet/core/extensions/dependency-injection), and [.NET Generic Host](https://learn.microsoft.com/en-us/dotnet/core/extensions/generic-host).
 
 ## A practical mental model
 

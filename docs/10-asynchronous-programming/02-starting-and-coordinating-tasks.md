@@ -2,7 +2,7 @@
 
 One of the biggest practical async lessons is that the placement of `await` changes program behavior. If two pieces of work are independent, you can often start both tasks first and await them later. If you await each one immediately, you may accidentally serialize work that could have overlapped.
 
-Original Microsoft Learn reference: [Microsoft Learn asynchronous programming in C#](https://learn.microsoft.com/dotnet/csharp/asynchronous-programming/).
+Original Microsoft Learn reference: [Task asynchronous programming model](https://learn.microsoft.com/en-us/dotnet/csharp/asynchronous-programming/task-asynchronous-programming-model).
 
 ## A coordination mental model
 
